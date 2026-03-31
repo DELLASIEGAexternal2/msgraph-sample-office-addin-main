@@ -8,7 +8,7 @@
   <Version>1.0.0.1</Version>
   <ProviderName>MSGraph Action</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="DSPS CO/IE Graph Fonctions SSO_Auth&Permissions"/>
+  <DisplayName DefaultValue="DSPS CO/IE Graph Fonctions SSO_Auth_Permissions"/>
   <Description DefaultValue="Un module complémentaire qui explique comment utiliser Microsoft Graph pour accéder au calendrier de l'utilisateur.
 "/>
   <IconUrl DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-32.png"/>
