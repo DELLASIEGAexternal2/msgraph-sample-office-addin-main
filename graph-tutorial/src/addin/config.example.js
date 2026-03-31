@@ -4,7 +4,7 @@
 /* global window */
 
 const authConfig = {
-  clientId: 'YOUR_APP_ID_HERE',
+  clientId: 'e92a8324-40d8-4ce5-876d-99df6b07acf9',
 };
 
 // @ts-ignore
