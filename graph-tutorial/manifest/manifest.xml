@@ -6,7 +6,7 @@
            xsi:type="TaskPaneApp">
   <Id>86225d43-3e88-409f-84a6-759eecac29f6</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>MSGraph Action</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Excel Graph Calendar"/>
   <Description DefaultValue="Un module complémentaire qui explique comment utiliser Microsoft Graph pour accéder au calendrier de l'utilisateur.
