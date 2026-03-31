@@ -429,45 +429,42 @@ async function createEvent(evt) {
 // </CreateEventSnippet>
 
 // <OfficeReadySnippet>
+
+
+
+// </CreateEventSnippet> Office.onReady
+
 Office.onReady((info) => {
-  // Only run if we're inside Excel
   if (info.host === Office.HostType.Excel) {
     $(async function () {
       let apiToken = '';
+
       try {
         apiToken = await OfficeRuntime.auth.getAccessToken({
           allowSignInPrompt: true,
         });
-        console.log(`API Token: ${apiToken}`);
       } catch (error) {
-        console.log(`getAccessToken error: ${JSON.stringify(error)}`);
-        // Fall back to interactive login
         showConsentUi();
+        return;
       }
 
-      // Call auth status API to see if we need to get consent
       const authStatusResponse = await fetch(`${getBaseUrl()}/auth/status`, {
         headers: {
           authorization: `Bearer ${apiToken}`,
         },
       });
 
-      const authStatus = await authStatusResponse.json();
-      if (authStatus.status === 'consent_required') {
-        showConsentUi();
+      const autStatus = await authStatusResponse.json();
+
+      if (authStatusResponse.status === 'authenticated') {
+        showMainUi();
       } else {
-        // report error
-        if (authStatus.status === 'error') {
-          const error = JSON.stringify(
-            authStatus.error,
-            Object.getOwnPropertyNames(authStatus.error),
-          );
-          showStatus(`Error checking auth status: ${error}`, true);
-        } else {
-          showMainUi();
-        }
+        showStatus('Authentication failed', true);
       }
-    });
-  }
-});
+      
+    }); // <-- ferme le $(async function() { ... })
+  }      // <-- ferme le if (...)
+});       // <-- ferme Office.onReady((info) => { ... })
+
 // </OfficeReadySnippet>
+
