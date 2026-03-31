@@ -89,9 +89,7 @@
       <Id>28760216-8eae-4635-a706-6353bc5e1004</Id>
       <Resource>api://e92a8324-40d8-4ce5-876d-99df6b07acf9</Resource>
       <Scopes>
-        <Scope>openid</Scope>
-        <Scope>profile</Scope>
-        <Scope>access_as_user</Scope>
+                <Scope>access_as_user</Scope>
       </Scopes>
     </WebApplicationInfo>
   </VersionOverrides>
