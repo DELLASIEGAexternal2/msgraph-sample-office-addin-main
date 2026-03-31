@@ -9,18 +9,19 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Excel Graph Calendar"/>
-  <Description DefaultValue="An add-in that shows how to call Microsoft Graph to access the user's calendar."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <Description DefaultValue="Un module complémentaire qui explique comment utiliser Microsoft Graph pour accéder au calendrier de l'utilisateur.
+"/>
+  <IconUrl DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/src/addin/consent.html"/>
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://dellasiegaexternal2.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
+    <SourceLocation DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/taskpane/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -65,27 +66,28 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://docs.microsoft.com/graph"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://dellasiegaexternal2.github.io/msgraph-sample-office-addin-main/graph-tutorial/taskpane/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with the Excel Graph Calendar add-in!"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Commencez dès maintenant avec le module complémentaire Calendrier graphique Excel !
+!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Graph Calendar"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Import Calendar"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Importer le Calendar"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Add-in loaded succesfully. Go to the HOME tab and click the 'Import Calendar' button to get started."/>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Import Calendar task pane"/>
+        <bt:String id="GetStarted.Description" DefaultValue="Module complémentaire installé avec succès. Accédez à l'onglet ACCUEIL et cliquez sur le bouton « Importer le calendrier » pour commencer"/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click pour ouvrir le Calendar "/>
       </bt:LongStrings>
     </Resources>
     <WebApplicationInfo>
-      <Id>YOUR_CLIENT_ID_HERE</Id>
-      <Resource>api://localhost:3000/YOUR_CLIENT_ID_HERE</Resource>
+      <Id>28760216-8eae-4635-a706-6353bc5e1004</Id>
+      <Resource>api:https://dellasiegaexternal2.github.io/28760216-8eae-4635-a706-6353bc5e1004</Resource>
       <Scopes>
         <Scope>openid</Scope>
         <Scope>profile</Scope>
